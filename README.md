@@ -34,6 +34,16 @@ As it might be useful for some, this slave driver is enclosed and easy to use.
 	            );
 	}
 
+## Events handling
+Call from the main loop:
+
+    void main ()
+    {
+	    while (1) {
+		    i2cDoEvents(1); // I2C driver (I2C1 or I2C2)
+	    }
+    }
+
 ## Callbacks
 
 Read Request:
